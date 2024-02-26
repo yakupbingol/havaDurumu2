@@ -25,7 +25,7 @@ namespace HavaDurumu
             XDocument weather = XDocument.Load(connection);
             var temp = weather.Descendants("temperature").ElementAt(0).Attribute("value").Value;
             var weatherstate = weather.Descendants("weather").ElementAt(0).Attribute("value").Value;
-            Console.WriteLine(input + " için sicaklik: " + temp + "--------- Hava Durumu: " + weatherstate);
+            Console.WriteLine(input + " için sicaklik: " + temp + "--------- asd Durumu: " + weatherstate);
         }
 
         public static GetWeatherState  getWeatherState(string temp, string weatherState)
